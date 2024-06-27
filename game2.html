@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Shooting Game</title>
+    <link rel="icon" type="Image/jpg" href="icon.jpg">
+    <link rel="stylesheet" href="game2.css">
+</head>
+<body>
+        <style>
+            body {
+                background: black;
+                margin: 0;
+            }
+        </style>
+        <div class="fixed text-white" style="width: 20vw; margin: 1%;">
+            <span class="pad">Score: </span><span class="pad" id="score">0</span>
+            <video id="funny-video" width="320" height="240" style="display: none;" autoplay>
+                <source src="Funny videos (1080p).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="fixed flex items-center popup" id="popup">
+            <h1 id="popup-score">0</h1>
+            <img id="fun-image" src="" alt="Fun Image" style="display: none;">
+
+            <p>Points</p>
+            <div class="button items-center" id="start-game-button">
+                <div>Start Game</div>
+            </div>
+        </div>
+        <canvas> </canvas>
+        <script src="game2.js"></script>
+
+</body>
+</html>
